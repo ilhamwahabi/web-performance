@@ -1,0 +1,14 @@
+{
+  "name": "web-performance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck index.mdx"
+  },
+  "author": "Ilham Wahabi",
+  "license": "ISC",
+  "devDependencies": {
+    "mdx-deck": "^4.1.1"
+  }
+}
