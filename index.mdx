@@ -95,6 +95,63 @@ import Image from "./components/Image";
 
 ---
 
+## Code splitting
+
+---
+
+## Imagine this scenario
+
+<Steps>
+
+1. Your website have home page, about page, and register page
+2. User visit your home page
+3. Is user also need to load your about page & register page?
+
+</Steps>
+
+---
+
+### Just load what important
+
+<Image alt="" src={require("./images/codesplitting.png")} />
+
+---
+
+## 2 types:
+
+<Steps>
+
+1. Route based
+   - Split route that likely will not visited often
+   - Ex: Split login page and dashboard page
+2. Component based
+   - Split component that will not use immediately
+   - Ex: Split modal and drawer
+
+</Steps>
+
+---
+
+```js
+// load even if user will not use
+import Modal from "./Modal.vue";
+
+// just load when used
+const Modal = () => import("./Modal.vue");
+```
+
+---
+
+### Nuxt use route-based code splitting as default
+
+<Image alt="" src={require("./images/nuxt.png")} />
+
+---
+
+## This is JUST Javascript
+
+---
+
 ## Debugging with slow connection
 
 <Image alt="" src={require("./images/network.png")} />
