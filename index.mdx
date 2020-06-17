@@ -111,7 +111,7 @@ import Image from "./components/Image";
 
 ---
 
-### Just load what important
+### Just load what matters
 
 <Image alt="" src={require("./images/codesplitting.png")} />
 
@@ -148,7 +148,7 @@ const Modal = () => import("./Modal.vue");
 
 ---
 
-## This is JUST Javascript
+## This is JUST (modern) Javascript
 
 ---
 
@@ -170,7 +170,11 @@ const Modal = () => import("./Modal.vue");
 
 # Alternative package
 
+<Steps>
+
 take with grain of salt
+
+</Steps>
 
 ---
 
@@ -193,6 +197,20 @@ take with grain of salt
 even better
 
 ## lodash.[methodName]
+
+</Steps>
+
+---
+
+## Or use it with
+
+<Steps>
+
+```js
+import add from "lodash/add";
+
+add(6, 4);
+```
 
 </Steps>
 
