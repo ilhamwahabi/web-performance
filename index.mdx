@@ -1,4 +1,4 @@
-import Image from "./components/Image";
+import Img from "./components/Image";
 import Layout from "./components/Layout";
 
 # Web Performance
@@ -106,7 +106,7 @@ import Layout from "./components/Layout";
 
 ---
 
-<Image alt="" src={require("./images/js.png")} />
+<Img alt="" src={require("./images/js.png")} />
 
 ---
 
@@ -155,13 +155,17 @@ add("1", "a"); // slower
 
 ## Debugging with worsen performance
 
-<Image alt="" src={require("./images/network.png")} />
+<Img
+  alt=""
+  src={require("./images/network.png")}
+  style={{ width: "60%", maxWidth: 1080 }}
+/>
 
 ---
 
 ## Benchmark Javascript Operation with [perf.link](https://perf.link/)
 
-<Image alt="" src={require("./images/perflink.png")} />
+<Img alt="" src={require("./images/perflink.png")} />
 
 ---
 
@@ -171,7 +175,7 @@ add("1", "a"); // slower
 
 ## Debugging with slow connection
 
-<Image alt="" src={require("./images/network.png")} />
+<Img alt="" src={require("./images/network.png")} />
 
 ---
 
@@ -195,7 +199,7 @@ add("1", "a"); // slower
 
 ### Just load what matters
 
-<Image alt="" src={require("./images/codesplitting.png")} />
+<Img alt="" src={require("./images/codesplitting.png")} />
 
 ---
 
@@ -226,7 +230,7 @@ const Modal = () => import("./Modal.vue");
 
 ### Nuxt use route-based code splitting as default
 
-<Image alt="" src={require("./images/nuxt.png")} />
+<Img alt="" src={require("./images/nuxt.png")} />
 
 ---
 
@@ -234,13 +238,13 @@ const Modal = () => import("./Modal.vue");
 
 ---
 
-# Load Image
+# Load Img
 
 ---
 
-<Steps>
-
 ## Keep small
+
+<Steps>
 
 ## and
 
@@ -280,7 +284,7 @@ const Modal = () => import("./Modal.vue");
 
 ## [Imgix](https://www.imgix.com/)
 
-<Image alt="" src={require("./images/imgix.png")} />
+<Img alt="" src={require("./images/imgix.png")} />
 
 ---
 
@@ -306,7 +310,7 @@ const Modal = () => import("./Modal.vue");
 
 # [Bundlephobia](https://bundlephobia.com/)
 
-<Image alt="" src={require("./images/bundlephobia.png")} />
+<Img alt="" src={require("./images/bundlephobia.png")} />
 
 ---
 
@@ -367,6 +371,7 @@ add(6, 4);
 <Steps>
 
 - Blocking operation
+
 - Consume CPU
 
 </Steps>
@@ -447,8 +452,6 @@ browser be like
 
 ---
 
-<Steps>
-
 ```js
 // BAD
 const width1 = element1.offsetWidth;
@@ -457,6 +460,8 @@ element1.style.width = width1 * 2;
 const width2 = element2.offsetWidth;
 element1.style.width = width2 * 2;
 ```
+
+<Steps>
 
 ```js
 // GOOD
@@ -489,7 +494,7 @@ Do that, you'll avoid accidental trashing
 
 # Have long list of data?
 
-<Image alt="" src={require("./images/twitter.png")} />
+<Img alt="" src={require("./images/twitter.png")} />
 
 ---
 
@@ -568,37 +573,37 @@ Do that, you'll avoid accidental trashing
 
 ## 1. [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk)
 
-<Image alt="" src={require("./images/lighthouse.png")} />
+<Img alt="" src={require("./images/lighthouse.png")} />
 
 ---
 
 ## 2. [Web Vitals](https://chrome.google.com/webstore/detail/web-vitals/ahfhijdlegdabablpippeagghigmibma)
 
-<Image alt="" src={require("./images/webvitals.png")} />
+<Img alt="" src={require("./images/webvitals.png")} />
 
 ---
 
 ## 3. [Measure](https://web.dev/measure/)
 
-<Image alt="" src={require("./images/measure.png")} />
+<Img alt="" src={require("./images/measure.png")} />
 
 ---
 
 ## 4. [Pagespeed Insight](https://developers.google.com/speed/pagespeed/insights/)
 
-<Image alt="" src={require("./images/pagespeedinsight.png")} />
+<Img alt="" src={require("./images/pagespeedinsight.png")} />
 
 ---
 
 ## 5. [Testmysite](https://testmysite.io/)
 
-<Image alt="" src={require("./images/testmysite.png")} />
+<Img alt="" src={require("./images/testmysite.png")} />
 
 ---
 
 ## 6. [Webpagetest](https://www.webpagetest.org/)
 
-<Image alt="" src={require("./images/webpagetest.png")} />
+<Img alt="" src={require("./images/webpagetest.png")} />
 
 ---
 
