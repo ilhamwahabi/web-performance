@@ -286,6 +286,131 @@ add(6, 4);
 
 ---
 
+# Reflow
+
+<Steps>
+
+- Blocking operation
+- Consume CPU
+
+</Steps>
+
+---
+
+Whenever the geometry of an element changes, the browser has to reflow the page
+
+Reflow an element causes a reflow of its parent and children
+
+---
+
+## Cause
+
+<Steps>
+
+- Changing the font
+- Content changes
+- Add / remove element
+- Add / remove classes
+- Calculating size
+- Changing size / position
+- (Even more...)
+
+</Steps>
+
+---
+
+## How to Avoid?
+
+- Change classes at the lowest level
+
+- Avoid repeatedly modifying inline style
+
+- Avoid table layouts
+
+- (Even more...)
+
+---
+
+## Do Batch DOM Manipulation
+
+<Steps>
+
+```js
+// BAD
+parent.append(child1);
+parent.append(child2);
+```
+
+```js
+// GOOD
+fragment.append(child1);
+fragment.append(child2);
+
+parent.append(fragment);
+```
+
+</Steps>
+
+---
+
+## Layout Trashing
+
+---
+
+we **update** something
+
+<Steps>
+
+then we **read** something
+
+browser be like
+
+#### wait, you just changed something before. Let me reflow the page again
+
+</Steps>
+
+---
+
+<Steps>
+
+```js
+// BAD
+const width1 = element1.offsetWidth;
+element1.style.width = width1 * 2;
+
+const width2 = element2.offsetWidth;
+element1.style.width = width2 * 2;
+```
+
+```js
+// GOOD
+const width1 = element1.offsetWidth;
+const width2 = element2.offsetWidth;
+
+element1.style.width = width1 * 2;
+element2.style.width = width2 * 2;
+```
+
+</Steps>
+
+---
+
+# Solution
+
+<Steps>
+
+### Separate read and write
+
+</Steps>
+
+---
+
+If you can change the visual appearance of an element by adding a **CSS class**
+
+Do that, you'll avoid accidental trashing
+
+---
+
 # Have long list of data?
 
 <Image alt="" src={require("./images/twitter.png")} />
