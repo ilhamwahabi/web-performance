@@ -2,7 +2,7 @@
 
 ## Description
 
-Slides for Eduka workshop "Build High Performance Web Apps" (June 18th, 2020)
+Slides for Eduka workshop "How to Build High Performance Website" (June 18th, 2020)
 
 Open directly here https://web-performance.iwgx.now.sh/
 
