@@ -85,9 +85,62 @@ import Image from "./components/Image";
 
 ---
 
+<Image alt="" src={require("./images/js.png")} />
+
+---
+
+# Try avoid nested function
+
+```js
+function cubic(a) {
+  // Will parse repeatedly
+  function square(b) {
+    return b * b;
+  }
+
+  return square(a) * a;
+}
+```
+
+---
+
+# Use function consistently
+
+```js
+function add(a, b) {
+  return a + b;
+}
+
+add(1, 2);
+
+add(2, 3); // faster
+
+add("1", "a"); // slower
+```
+
+---
+
+# Takeaways
+
+<Steps>
+
+- Ship less code
+
+- Consider type system
+
+</Steps>
+
+---
+
 ## Debugging with worsen performance
 
 <Image alt="" src={require("./images/network.png")} />
+
+---
+
+## Benchmark Javascript Operation with [perf.link](https://perf.link/)
+
+<Image alt="" src={require("./images/perflink.png")} />
 
 ---
 
@@ -110,7 +163,9 @@ import Image from "./components/Image";
 <Steps>
 
 1. Your website have home page, about page, and register page
+
 2. User visit your home page
+
 3. Is user also need to load your about page & register page?
 
 </Steps>
