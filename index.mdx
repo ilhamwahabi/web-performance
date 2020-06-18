@@ -1,5 +1,10 @@
 import Img from "./components/Image";
 import Layout from "./components/Layout";
+import Link from "./components/Link";
+import { themes } from "mdx-deck";
+import { dark } from '@mdx-deck/themes'
+
+export const theme = dark;
 
 <Layout>
 
@@ -18,13 +23,13 @@ by Ilham Wahabi
 - Frontend Developer
 - Informatics ITB'16
 - Ex. eHealth, Dekoruma, Chatbiz, Stoqo
-- [Github](https://github.com/iwgx) & [Twitter](https://twitter.com/ilhamwahabigx)
+- <Link href="https://github.com/iwgx">Github</Link> & <Link href="https://twitter.com/ilhamwahabigx">Twitter</Link>
 
 </Steps>
 
 ---
 
-# BAD FOUND
+# bad found
 
 ---
 
@@ -52,7 +57,7 @@ by Ilham Wahabi
 
 ---
 
-# GOOD FOUND
+# good found
 
 ---
 
@@ -123,9 +128,9 @@ function cubic(a) {
   // Will parse repeatedly
   function square(b) {
     return b * b;
-  }
+  };
 
-  return square(a) * a;
+  return square(a) \* a;
 }
 ```
 
@@ -169,7 +174,7 @@ add("1", "a"); // slower
 
 ---
 
-## Benchmark Javascript Operation with [perf.link](https://perf.link/)
+## Benchmark Javascript Operation with <Link href="https://perf.link/">perf.link</Link>
 
 <Img alt="" src={require("./images/perflink.png")} />
 
@@ -193,11 +198,11 @@ add("1", "a"); // slower
 
 <Steps>
 
-1. Your website have home page, about page, and register page
+1. Your website have *home page*, *about page*, and *register page*
 
-2. User visit your home page
+2. User visit your *home page*
 
-3. Is user also need to load your about page & register page?
+3. Is user also need to load your *about page* & *register page*?
 
 </Steps>
 
@@ -216,6 +221,7 @@ add("1", "a"); // slower
 1. Route based
    - Split route that likely will not visited often
    - Ex: Split login page and dashboard page
+
 2. Component based
    - Split component that will not use immediately
    - Ex: Split modal and drawer
@@ -288,7 +294,7 @@ const Modal = () => import("./Modal.vue");
 
 ---
 
-## [Imgix](https://www.imgix.com/)
+## <Link href="https://www.imgix.com/">Imgix</Link>
 
 <Img alt="" src={require("./images/imgix.png")} />
 
@@ -304,7 +310,7 @@ const Modal = () => import("./Modal.vue");
 
 - And another great feature!
 
-- https://github.com/imgix/vue-imgix
+- <Link href="https://github.com/imgix/vue-imgix">vue-imgix</Link>
 
 </Steps>
 
@@ -314,7 +320,7 @@ const Modal = () => import("./Modal.vue");
 
 ---
 
-# [Bundlephobia](https://bundlephobia.com/)
+# <Link href="https://bundlephobia.com/">Bundlephobia</Link>
 
 <Img alt="" src={require("./images/bundlephobia.png")} />
 
@@ -518,7 +524,7 @@ Do that, you'll avoid accidental trashing
 
 ---
 
-## Use [`vue-virtual-scroll-list`](https://github.com/tangbc/vue-virtual-scroll-list)
+## Use <Link href="https://github.com/tangbc/vue-virtual-scroll-list">vue-virtual-scroll-list</Link>
 
 <Steps>
 
@@ -577,37 +583,37 @@ Do that, you'll avoid accidental trashing
 
 ---
 
-## 1. [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk)
+## 1. <Link href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk">Lighthouse</Link>
 
 <Img alt="" src={require("./images/lighthouse.png")} />
 
 ---
 
-## 2. [Web Vitals](https://chrome.google.com/webstore/detail/web-vitals/ahfhijdlegdabablpippeagghigmibma)
+## 2. <Link href="https://chrome.google.com/webstore/detail/web-vitals/ahfhijdlegdabablpippeagghigmibma">Web Vitals</Link>
 
 <Img alt="" src={require("./images/webvitals.png")} />
 
 ---
 
-## 3. [Measure](https://web.dev/measure/)
+## 3. <Link href="https://web.dev/measure/">Measure</Link>
 
 <Img alt="" src={require("./images/measure.png")} />
 
 ---
 
-## 4. [Pagespeed Insight](https://developers.google.com/speed/pagespeed/insights/)
+## 4. <Link href="https://developers.google.com/speed/pagespeed/insights/">Pagespeed Insight</Link>
 
 <Img alt="" src={require("./images/pagespeedinsight.png")} />
 
 ---
 
-## 5. [Testmysite](https://testmysite.io/)
+## 5. <Link href="https://testmysite.io/">Testmysite</Link>
 
 <Img alt="" src={require("./images/testmysite.png")} />
 
 ---
 
-## 6. [Webpagetest](https://www.webpagetest.org/)
+## 6. <Link href="https://www.webpagetest.org/">Webpagetest</Link>
 
 <Img alt="" src={require("./images/webpagetest.png")} />
 
