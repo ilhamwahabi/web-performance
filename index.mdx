@@ -158,7 +158,47 @@ const Modal = () => import("./Modal.vue");
 
 ---
 
-## Load Image
+# Load Image
+
+---
+
+<Steps>
+
+## Keep small
+
+## and
+
+## Just load what screen need
+
+</Steps>
+
+---
+
+```html
+<img src="small.jpg" srcset="medium.jpg 500w, large.jpg 1000w" />
+```
+
+<Steps>
+
+- If your device width is 320px
+- And non retina (1x)
+- Calculation:
+  - 500 / 320 = 1.5625
+  - 1000 / 320 = 3.125
+- Then your browser will choose **medium.jpg**
+- Since it nearest >= than 1
+
+</Steps>
+
+---
+
+- You need multiple file for one image
+
+<Steps>
+
+- You need to compress it manually
+
+</Steps>
 
 ---
 
@@ -173,8 +213,11 @@ const Modal = () => import("./Modal.vue");
 <Steps>
 
 - Just need 1 master file
+
 - No need compress manually
+
 - And another great feature!
+
 - https://github.com/imgix/vue-imgix
 
 </Steps>
