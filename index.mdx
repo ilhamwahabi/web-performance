@@ -95,6 +95,12 @@ import Image from "./components/Image";
 
 ---
 
+## Debugging with slow connection
+
+<Image alt="" src={require("./images/network.png")} />
+
+---
+
 ## Code splitting
 
 ---
@@ -152,9 +158,26 @@ const Modal = () => import("./Modal.vue");
 
 ---
 
-## Debugging with slow connection
+## Load Image
 
-<Image alt="" src={require("./images/network.png")} />
+---
+
+## [Imgix](https://www.imgix.com/)
+
+<Image alt="" src={require("./images/imgix.png")} />
+
+---
+
+### http://domain/img.png?auto=compress&w=600&h=400
+
+<Steps>
+
+- Just need 1 master file
+- No need compress manually
+- And another great feature!
+- https://github.com/imgix/vue-imgix
+
+</Steps>
 
 ---
 
