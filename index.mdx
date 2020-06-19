@@ -1,11 +1,14 @@
 import { themes } from "mdx-deck";
-import { dark } from "@mdx-deck/themes";
+import { dark, highlight } from "@mdx-deck/themes";
 
 import Img from "./components/Img";
 import Layout from "./components/Layout";
 import Link from "./components/Link";
 
-export const theme = dark;
+export const theme = {
+  ...dark,
+  ...highlight,
+};
 
 <Layout>
 
@@ -245,12 +248,21 @@ add("1", "a"); // slower
 
 ---
 
-```js
+```vue
+<template>
+  <lazy-component />
+</template>
+
+<script>
 // load even if user will not use
-import Modal from "./Modal.vue";
+// import Modal from "./Modal.vue";
 
 // just load when used
-const Modal = () => import("./Modal.vue");
+const LazyModal = () => import("Modal.vue");
+export default {
+  components: { LazyModal },
+};
+</script>
 ```
 
 ---
@@ -315,7 +327,9 @@ const Modal = () => import("./Modal.vue");
 
 ---
 
-### http://domain/img.png?auto=compress&w=600&h=400
+```html
+http://domain/img.png?auto=compress&w=600&h=400
+```
 
 <Steps>
 
@@ -325,7 +339,7 @@ const Modal = () => import("./Modal.vue");
 
 - And another great feature!
 
-- <Link href="https://github.com/imgix/vue-imgix">vue-imgix</Link>
+- official: <Link href="https://github.com/imgix/vue-imgix">vue-imgix</Link>
 
 </Steps>
 
@@ -405,9 +419,13 @@ add(6, 4);
 
 ---
 
+<Layout>
+
 Whenever the geometry of an element changes, the browser has to reflow the page
 
 Reflow an element causes a reflow of its parent and children
+
+</Layout>
 
 ---
 
@@ -465,6 +483,8 @@ parent.append(fragment);
 
 ---
 
+<Layout>
+
 we **update** something
 
 <Steps>
@@ -473,9 +493,11 @@ then we **read** something
 
 browser be like
 
-#### wait, you just changed something before. Let me reflow the page again
+#### wait, you just changed something before. Let me reflow the page again to get latest value
 
 </Steps>
+
+</Layout>
 
 ---
 
@@ -488,8 +510,6 @@ const width2 = element2.offsetWidth;
 element1.style.width = width2 * 2;
 ```
 
-<Steps>
-
 ```js
 // GOOD
 const width1 = element1.offsetWidth;
@@ -498,8 +518,6 @@ const width2 = element2.offsetWidth;
 element1.style.width = width1 * 2;
 element2.style.width = width2 * 2;
 ```
-
-</Steps>
 
 ---
 
@@ -513,9 +531,13 @@ element2.style.width = width2 * 2;
 
 ---
 
+<Layout>
+
 If you can change the visual appearance of an element by adding a **CSS class**
 
 Do that, you'll avoid accidental trashing
+
+</Layout>
 
 ---
 
