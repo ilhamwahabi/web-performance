@@ -4,6 +4,7 @@ import { dark, highlight } from "@mdx-deck/themes";
 import Img from "./components/Img";
 import Layout from "./components/Layout";
 import Link from "./components/Link";
+import Column from "./components/Column";
 
 export const theme = {
   ...dark,
@@ -111,15 +112,13 @@ by Ilham Wahabi
 
 # 3 Aspect of Performance
 
-<Steps>
-
-### Javascript
-
-### Load
-
-### Rendering
-
-</Steps>
+<Column
+  data={[
+    { label: "Javascript", img: require("./images/coding.png") },
+    { label: "Load", img: require("./images/loader.png") },
+    { label: "Rendering", img: require("./images/render.png") },
+  ]}
+/>
 
 </Invert>
 
@@ -152,9 +151,9 @@ function cubic(a) {
   // Will parse repeatedly
   function square(b) {
     return b * b;
-  };
+  }
 
-  return square(a) \* a;
+  return square(a) * a;
 }
 ```
 

@@ -12,8 +12,5 @@
   "license": "ISC",
   "devDependencies": {
     "mdx-deck": "^4.1.1"
-  },
-  "dependencies": {
-    "@mdx-deck/themes": "^4.1.0"
   }
 }
