@@ -1,8 +1,6 @@
 import React from "react";
 
-function Image({ src }) {
-  console.log(src);
-
+function Img({ src }) {
   return (
     <div
       style={{
@@ -18,4 +16,4 @@ function Image({ src }) {
   );
 }
 
-export default Image;
+export default Img;

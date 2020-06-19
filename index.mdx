@@ -1,8 +1,9 @@
-import Img from "./components/Image";
+import { themes } from "mdx-deck";
+import { dark } from "@mdx-deck/themes";
+
+import Img from "./components/Img";
 import Layout from "./components/Layout";
 import Link from "./components/Link";
-import { themes } from "mdx-deck";
-import { dark } from '@mdx-deck/themes'
 
 export const theme = dark;
 
@@ -23,7 +24,9 @@ by Ilham Wahabi
 - Frontend Developer
 - Informatics ITB'16
 - Ex. eHealth, Dekoruma, Chatbiz, Stoqo
-- <Link href="https://github.com/iwgx">Github</Link> & <Link href="https://twitter.com/ilhamwahabigx">Twitter</Link>
+- <Link href="https://github.com/iwgx">Github</Link> & <Link href="https://twitter.com/ilhamwahabigx">
+    Twitter
+  </Link>
 
 </Steps>
 
@@ -125,7 +128,7 @@ by Ilham Wahabi
 
 ---
 
-<Img alt="" src={require("./images/js.png")} />
+<Img src={require("./images/js.png")} />
 
 ---
 
@@ -175,8 +178,7 @@ add("1", "a"); // slower
 ## Debugging with worsen performance
 
 <Img
-  alt=""
-  src={require("./images/network.png")}
+  src={require("./images/performance.png")}
   style={{ width: "60%", maxWidth: 1080 }}
 />
 
@@ -184,7 +186,7 @@ add("1", "a"); // slower
 
 ## Benchmark Javascript Operation with <Link href="https://perf.link/">perf.link</Link>
 
-<Img alt="" src={require("./images/perflink.png")} />
+<Img src={require("./images/perflink.png")} />
 
 ---
 
@@ -194,7 +196,7 @@ add("1", "a"); // slower
 
 ## Debugging with slow connection
 
-<Img alt="" src={require("./images/network.png")} />
+<Img src={require("./images/network.png")} />
 
 ---
 
@@ -206,11 +208,11 @@ add("1", "a"); // slower
 
 <Steps>
 
-1. Your website have *home page*, *about page*, and *register page*
+1. Your website have _home page_, _about page_, and _register page_
 
-2. User visit your *home page*
+2. User visit your _home page_
 
-3. Is user also need to load your *about page* & *register page*?
+3. Is user also need to load your _about page_ & _register page_?
 
 </Steps>
 
@@ -220,7 +222,7 @@ add("1", "a"); // slower
 
 ## Just load what matters
 
-<Img alt="" src={require("./images/codesplitting.png")} />
+<Img src={require("./images/codesplitting.png")} />
 
 </Invert>
 
@@ -231,6 +233,7 @@ add("1", "a"); // slower
 <Steps>
 
 1. Route based
+
    - Split route that likely will not visited often
    - Ex: Split login page and dashboard page
 
@@ -254,7 +257,7 @@ const Modal = () => import("./Modal.vue");
 
 ### Nuxt use route-based code splitting as default
 
-<Img alt="" src={require("./images/nuxt.png")} />
+<Img src={require("./images/nuxt.png")} />
 
 ---
 
@@ -308,7 +311,7 @@ const Modal = () => import("./Modal.vue");
 
 ## <Link href="https://www.imgix.com/">Imgix</Link>
 
-<Img alt="" src={require("./images/imgix.png")} />
+<Img src={require("./images/imgix.png")} />
 
 ---
 
@@ -334,7 +337,7 @@ const Modal = () => import("./Modal.vue");
 
 # <Link href="https://bundlephobia.com/">Bundlephobia</Link>
 
-<Img alt="" src={require("./images/bundlephobia.png")} />
+<Img src={require("./images/bundlephobia.png")} />
 
 ---
 
@@ -518,7 +521,7 @@ Do that, you'll avoid accidental trashing
 
 # Have long list of data?
 
-<Img alt="" src={require("./images/twitter.png")} />
+<Img src={require("./images/twitter.png")} />
 
 ---
 
@@ -605,37 +608,37 @@ Do that, you'll avoid accidental trashing
 
 ## 1. <Link href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk">Lighthouse</Link>
 
-<Img alt="" src={require("./images/lighthouse.png")} />
+<Img src={require("./images/lighthouse.png")} />
 
 ---
 
 ## 2. <Link href="https://chrome.google.com/webstore/detail/web-vitals/ahfhijdlegdabablpippeagghigmibma">Web Vitals</Link>
 
-<Img alt="" src={require("./images/webvitals.png")} />
+<Img src={require("./images/webvitals.png")} />
 
 ---
 
 ## 3. <Link href="https://web.dev/measure/">Measure</Link>
 
-<Img alt="" src={require("./images/measure.png")} />
+<Img src={require("./images/measure.png")} />
 
 ---
 
 ## 4. <Link href="https://developers.google.com/speed/pagespeed/insights/">Pagespeed Insight</Link>
 
-<Img alt="" src={require("./images/pagespeedinsight.png")} />
+<Img src={require("./images/pagespeedinsight.png")} />
 
 ---
 
 ## 5. <Link href="https://testmysite.io/">Testmysite</Link>
 
-<Img alt="" src={require("./images/testmysite.png")} />
+<Img src={require("./images/testmysite.png")} />
 
 ---
 
 ## 6. <Link href="https://www.webpagetest.org/">Webpagetest</Link>
 
-<Img alt="" src={require("./images/webpagetest.png")} />
+<Img src={require("./images/webpagetest.png")} />
 
 ---
 
