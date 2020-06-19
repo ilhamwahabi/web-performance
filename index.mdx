@@ -10,6 +10,16 @@ export const theme = {
   ...highlight,
 };
 
+<Head>
+  <title>How to Build High Performance Website</title>
+  <link rel="icon" type="image/png" href={require("./images/computer.png")} />
+  <meta property="og:image" content={require("./images/banner.png")} />
+  <meta
+    name="og:description"
+    content="Discuss improvement that we can do especially with Vue"
+  />
+</Head>
+
 <Layout>
 
 # How to Build High Performance Website
@@ -161,7 +171,7 @@ add(1, 2);
 
 add(2, 3); // faster
 
-add("1", "a"); // slower
+add("1", "a"); // slow
 ```
 
 ---
@@ -250,14 +260,14 @@ add("1", "a"); // slower
 
 ```vue
 <template>
-  <lazy-component />
+  <lazy-modal />
 </template>
 
 <script>
-// load even if user will not use
+/* load even if user will not use */
 // import Modal from "./Modal.vue";
 
-// just load when used
+/* just load when used */
 const LazyModal = () => import("Modal.vue");
 export default {
   components: { LazyModal },
@@ -391,15 +401,11 @@ even better
 
 ## Or use it with
 
-<Steps>
-
 ```js
 import add from "lodash/add";
 
 add(6, 4);
 ```
-
-</Steps>
 
 ---
 
@@ -459,8 +465,6 @@ Reflow an element causes a reflow of its parent and children
 
 ## Do Batch DOM Manipulation
 
-<Steps>
-
 ```js
 // BAD
 parent.append(child1);
@@ -474,8 +478,6 @@ fragment.append(child2);
 
 parent.append(fragment);
 ```
-
-</Steps>
 
 ---
 

@@ -2,7 +2,7 @@
   "name": "web-performance",
   "homepage": "https://iwgx.github.io/web-performance/",
   "version": "1.0.0",
-  "description": "Slides for Eduka workshop 'Build High Performance Web Apps'",
+  "description": "Slides for Eduka workshop 'How to Build High Performance Website'",
   "main": "",
   "scripts": {
     "start": "mdx-deck index.mdx",
