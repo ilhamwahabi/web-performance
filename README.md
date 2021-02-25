@@ -8,9 +8,9 @@ Open directly here https://web-performance.iwgx.now.sh/
 
 ## Stack
 
-Develop using React, Typescript, MDX, and mdx-deck
+Develop using React, Typescript, MDX, and mdx-deck.
 
-Deploy to Now
+Deploy to Now. Splitbee for analytics.
 
 ## Usage
 
