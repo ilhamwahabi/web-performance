@@ -4,13 +4,13 @@
 
 Slides for Eduka workshop "How to Build High Performance Website" (June 18th, 2020)
 
-Open directly here https://web-performance.iwgx.now.sh/
+Open directly here https://web-performance.iwgx.io
 
 ## Stack
 
 Develop using React, Typescript, MDX, and mdx-deck.
 
-Deploy to Now. Splitbee for analytics.
+Deployed to Vercel (previously Now). Splitbee for analytics.
 
 ## Usage
 
