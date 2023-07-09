@@ -4,8 +4,6 @@
 
 Slides for Eduka workshop "How to Build High Performance Website" (June 18th, 2020)
 
-Open directly here https://web-performance.iwgx.io
-
 ## Stack
 
 Develop using React, Typescript, MDX, and mdx-deck.
